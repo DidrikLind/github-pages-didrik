@@ -2,7 +2,9 @@ import React from 'react';
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 import RaisedButton from 'material-ui/RaisedButton';
+import ThreeDRotation from 'material-ui-icons/ThreeDRotation';
 
+import Menu from 'material-ui-icons/Menu';
 export default class DrawerNav extends React.Component {
 
   constructor(props) {
@@ -16,9 +18,9 @@ export default class DrawerNav extends React.Component {
 
   render() {
     return (
-      <div>
+      <div>      
         <RaisedButton
-          label="{<Icon>star</Icon>}"
+          label={<Menu/>}
           onClick={this.handleToggle}
         />
         <Drawer
