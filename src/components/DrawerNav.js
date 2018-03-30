@@ -1,10 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom'
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 import RaisedButton from 'material-ui/RaisedButton';
 import ThreeDRotation from 'material-ui-icons/ThreeDRotation';
-
 import Menu from 'material-ui-icons/Menu';
+
+
 export default class DrawerNav extends React.Component {
 
   constructor(props) {
@@ -23,15 +25,17 @@ export default class DrawerNav extends React.Component {
           label={<Menu/>}
           onClick={this.handleToggle}
         />
-        <Drawer
-          docked={false}
-          width={200}
-          open={this.state.open}
-          onRequestChange={(open) => this.setState({open})}
-        >
-          <MenuItem onClick={this.handleClose}>Menu Item</MenuItem>
-          <MenuItem onClick={this.handleClose}>Menu Item 2</MenuItem>
-        </Drawer>
+        <nav>
+            <Drawer
+            docked={false}
+            width={200}
+            open={this.state.open}
+            onRequestChange={(open) => this.setState({open})}
+            >
+                <Link to='/'><MenuItem onClick={this.handleClose}>Home</MenuItem></Link>
+                <Link to='/persona'><MenuItem onClick={this.handleClose}>Roster</MenuItem></Link>
+            </Drawer>
+        </nav>
       </div>
     );
   }
