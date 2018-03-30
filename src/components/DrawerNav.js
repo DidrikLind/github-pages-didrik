@@ -32,7 +32,7 @@ export default class DrawerNav extends React.Component {
             onRequestChange={(open) => this.setState({open})}
             >
                 <Link to='/'><MenuItem onClick={this.handleClose}>Home</MenuItem></Link>
-                <Link to='/persona'><MenuItem onClick={this.handleClose}>Roster</MenuItem></Link>
+                <Link to='/persona'><MenuItem onClick={this.handleClose}>Persona</MenuItem></Link>
             </Drawer>
         </nav>
       </div>
