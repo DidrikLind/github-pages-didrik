@@ -3,11 +3,10 @@ import { render } from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import './index.css';
 
 
 render((
-    <BrowserRouter>
+    <BrowserRouter basename='/github-pages-didrik'>
       <App />
     </BrowserRouter>
   ), document.getElementById('root'));

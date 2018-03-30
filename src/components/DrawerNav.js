@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 import RaisedButton from 'material-ui/RaisedButton';
-import ThreeDRotation from 'material-ui-icons/ThreeDRotation';
 import Menu from 'material-ui-icons/Menu';
 
 
