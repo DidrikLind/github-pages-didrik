@@ -3,8 +3,15 @@ import { Link } from 'react-router-dom'
 import Drawer from 'material-ui/Drawer';
 import MenuItem from 'material-ui/MenuItem';
 import RaisedButton from 'material-ui/RaisedButton';
-import Menu from 'material-ui-icons/Menu';
 
+import {greenA200} from 'material-ui/styles/colors';
+import ActionHomeIcon from 'material-ui/svg-icons/action/home';
+import SocialPersonIcon from 'material-ui/svg-icons/social/person';
+import NavMenuIcon from 'material-ui/svg-icons/navigation/menu';
+
+const iconStyles = {
+    marginRight: 24,
+};
 
 export default class DrawerNav extends React.Component {
 
@@ -21,7 +28,7 @@ export default class DrawerNav extends React.Component {
     return (
       <div>      
         <RaisedButton
-          label={<Menu/>}
+          label={<NavMenuIcon hoverColor={greenA200} />}
           onClick={this.handleToggle}
         />
         <nav>
@@ -31,8 +38,8 @@ export default class DrawerNav extends React.Component {
             open={this.state.open}
             onRequestChange={(open) => this.setState({open})}
             >
-                <Link to='/'><MenuItem onClick={this.handleClose}>Home</MenuItem></Link>
-                <Link to='/persona'><MenuItem onClick={this.handleClose}>Persona</MenuItem></Link>
+                <Link to='/'><MenuItem onClick={this.handleClose}><ActionHomeIcon style={iconStyles} hoverColor={greenA200}/>H o m e</MenuItem></Link>
+                <Link to='/persona'><MenuItem onClick={this.handleClose}><SocialPersonIcon style={iconStyles} hoverColor={greenA200} />P e r s o n a</MenuItem></Link>
             </Drawer>
         </nav>
       </div>

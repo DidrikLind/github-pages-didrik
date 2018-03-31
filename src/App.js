@@ -6,7 +6,8 @@ import Main from './components/Main';
 
 
 const muiTheme = getMuiTheme({
-  palette: {}
+  palette: {},
+  fontFamily: 'Papyrus, fantasy'
 });
 
 class App extends Component {
