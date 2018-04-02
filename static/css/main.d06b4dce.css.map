@@ -1,1 +1,0 @@
-{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,KACE,+CACA,yBACA,qBAAuB,CACxB","file":"static/css/main.d06b4dce.css","sourcesContent":["body {\n  background-image: url(./pictures/brick-wall-bricks-stone-207142.jpg);\n  background-repeat: repeat;\n  background-size: cover;\n}\n\n\n\n// WEBPACK FOOTER //\n// ./src/index.css"],"sourceRoot":""}
