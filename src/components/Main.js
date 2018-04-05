@@ -3,11 +3,9 @@ import { Switch, Route } from 'react-router-dom'
 import Home from './Home'
 import Persona from './Persona'
 
-import './Style.css';
-
 // The Main component renders one of the provided components.
 const Main = () => (
-  <main id="main">
+  <main>
     <Switch>
       <Route exact path='/' component={Home}/>
       <Route path='/persona' component={Persona}/>

@@ -1,7 +1,8 @@
 import React from 'react'
 
 const Home = () => (
-  <div>
+  <div className="customText">
+    Didrik Lind
   </div>
 )
 

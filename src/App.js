@@ -1,27 +1,14 @@
 import React, { Component } from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import DrawerNav from './components/DrawerNav';
+import MainNav from './components/MainNav';
 import Main from './components/Main';
 
-
-const muiTheme = getMuiTheme({
-  palette: {},
-  fontFamily: 'Papyrus, fantasy'
-});
-
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
-      <MuiThemeProvider muiTheme={muiTheme}>
-        {/*only one child under MuiThemeProvider. Read why l8r!?: https://github.com/erikras/react-redux-universal-hot-example/issues/1153 */}
         <div>
-          <DrawerNav/>
+          <MainNav/>
           <Main/>
         </div>
-      </MuiThemeProvider>
     );
   }
 }
-
-export default App;

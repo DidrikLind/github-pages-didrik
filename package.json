@@ -4,10 +4,10 @@
   "private": true,
   "homepage": "https://didriklind.github.io/github-pages-didrik/",
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "gh-pages": "^1.1.0",
-    "material-ui": "^0.20.0",
-    "material-ui-icons": "^1.0.0-beta.36",
     "react": "^16.2.0",
+    "react-bootstrap": "^0.32.1",
     "react-dom": "^16.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.1"
