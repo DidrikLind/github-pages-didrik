@@ -1,10 +1,10 @@
 import React from 'react'
-import CustomTextParagraph from './CustomTextParagraph';
-
 import posts from '../data/posts';
 
 const Persona = () => (
-  <CustomTextParagraph text={posts.persona.text} />
+  <div>
+
+  </div>
 )
 
-export default Persona
+export default Persona;
